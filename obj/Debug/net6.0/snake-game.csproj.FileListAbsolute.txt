@@ -1,0 +1,15 @@
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.csproj.AssemblyReference.cache
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.GeneratedMSBuildEditorConfig.editorconfig
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.AssemblyInfoInputs.cache
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.AssemblyInfo.cs
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.csproj.CoreCompileInputs.cache
+/home/nik/C#/snake-game/bin/Debug/net6.0/snake-game
+/home/nik/C#/snake-game/bin/Debug/net6.0/snake-game.deps.json
+/home/nik/C#/snake-game/bin/Debug/net6.0/snake-game.runtimeconfig.json
+/home/nik/C#/snake-game/bin/Debug/net6.0/snake-game.dll
+/home/nik/C#/snake-game/bin/Debug/net6.0/ref/snake-game.dll
+/home/nik/C#/snake-game/bin/Debug/net6.0/snake-game.pdb
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.dll
+/home/nik/C#/snake-game/obj/Debug/net6.0/ref/snake-game.dll
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.pdb
+/home/nik/C#/snake-game/obj/Debug/net6.0/snake-game.genruntimeconfig.cache
