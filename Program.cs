@@ -8,18 +8,10 @@ namespace snake
         static void Main( string[] args )
         {
 
-      Point p1 = new Point();
-         p1.x = 12;
-         p1.y = 5;
-         p1.sym = '$';
+      Point p1 = new Point(4, 8, '#');
          p1.Drow();
-        Console.ReadLine();
-        
 
-      Point p2 = new Point();
-         p2.x = 12;
-         p2.y = 15;
-         p2.sym = '@';
+      Point p2 = new Point(9, 18, '&');
          p2.Drow();
         Console.ReadLine();
         }
