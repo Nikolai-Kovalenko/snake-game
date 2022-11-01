@@ -13,17 +13,12 @@ namespace snake
 
           Point p2 = new Point(9, 18, '&');
           p2.Drow();
+
+          Wertical_line line = new Wertical_line(8, 2, 12, '@');
+          line.Drow();
+
+
           Console.ReadLine();
-
-          List<int> num_list = new List<int>();
-          num_list.Add (0);
-          num_list.Add (4);
-          num_list.Add (6);
-          num_list.Add (17);
-
-          foreach(int i in num_list){
-            Console.WriteLine(i);
-          }
         }
     }
 }
