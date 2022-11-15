@@ -2,9 +2,8 @@
 
 namespace snake
 {
-  public class Wertical_line
+  public class Wertical_line : Figure
   {
-    List<Point> pList; 
 
     public Wertical_line(int x, int yHight, int yLow, char sym) 
     {
@@ -13,12 +12,6 @@ namespace snake
       {
         Point p = new Point(x, y, sym);
         pList.Add(p);
-      }
-    }
-    public void Drow() {
-      foreach(Point p in pList)
-      {
-        p.Drow();
       }
     }
   }
