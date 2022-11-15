@@ -47,10 +47,13 @@ namespace snake
      Console.Write(sym);               
     }
 
-        public override string ToString()
-            {
-                return x + ", " + y + ", " + sym;
-            }
-      
+    public override string ToString() {
+        return x + ", " + y + ", " + sym;
+    }
+
+    public void Clear() {
+      sym = ' ';
+      Drow();
+    }
   }
 }

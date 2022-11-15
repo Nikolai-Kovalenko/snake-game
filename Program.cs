@@ -7,7 +7,7 @@ namespace snake
     static void Main( string[] args )
     {
      // Console.SetBufferSize(80, 25);
-  
+      Console.CursorVisible = false;
       Horisontal_line upLine     = new Horisontal_line( 10, 78, 7, '+' );
       Horisontal_line downLine   = new Horisontal_line( 10, 78, 24, '+' );
       Wertical_line leftLine    = new Wertical_line( 10, 7, 24, '+' );
@@ -19,10 +19,45 @@ namespace snake
       rightLine.Drow();
 
       // Отрисовка точкк
-      Point p = new Point(12, 10, '~');
+      Point p = new Point(12, 10, '∎');
       Snake snake = new Snake(p, 4, Direction.RIHGT);
       snake.Drow();
-      Console.ReadLine();
-    }
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move(); 
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+      Thread.Sleep(300);
+      snake.Move();
+
+      
+      Console.CursorVisible = true;
+    }   
   }
 }
