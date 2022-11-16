@@ -8,27 +8,25 @@ namespace snake
     {
      // Console.SetBufferSize(80, 25);
       Console.CursorVisible = false;
-      Horisontal_line upLine     = new Horisontal_line( 10, 78, 7, '+' );
-      Horisontal_line downLine   = new Horisontal_line( 10, 78, 24, '+' );
-      Wertical_line leftLine    = new Wertical_line( 10, 7, 24, '+' );
-      Wertical_line rightLine   = new Wertical_line( 78, 7, 24, '+' );
 
-      upLine.Drow();
-      downLine.Drow();
-      leftLine.Drow();
-      rightLine.Drow();
+      Wall wall = new Wall(9, 100, 5, 39);
+      wall.Drow();
 
       // Отрисовка точкк
-      Point p = new Point(12, 10, '∎');
+      Point p = new Point(42, 27, '∎');
       Snake snake = new Snake(p, 4, Direction.RIHGT);
       snake.Drow();
 
-      FoodCreator foodCreator = new FoodCreator(78, 24, '$');
+      FoodCreator foodCreator = new FoodCreator(98, 38, '$');
       Point food = foodCreator.Createfood();
       food.Drow();
 
  
       while(true) {
+        if(wall.IsHit(snake) || snake.IsHitTail() ) {
+          break; 
+        }
+
         if(snake.Eat(food)) {
           food = foodCreator.Createfood();
           food.Drow();
@@ -36,13 +34,14 @@ namespace snake
         else {
           snake.Move();
         }
-        Thread.Sleep(100);
+        Thread.Sleep(60);
 
         if(Console.KeyAvailable) {
           ConsoleKeyInfo key = Console.ReadKey();
           snake.HandLine(key.Key);
         }
       }
+        Console.SetCursorPosition(1, 40);
         Console.CursorVisible = true;
     }   
   }
