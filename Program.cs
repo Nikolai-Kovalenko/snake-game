@@ -8,6 +8,7 @@ namespace snake
     {
      // Console.SetBufferSize(80, 25);
       Console.CursorVisible = false;
+      Console.Clear();
 
       Wall wall = new Wall(9, 100, 5, 39);
       wall.Drow();
