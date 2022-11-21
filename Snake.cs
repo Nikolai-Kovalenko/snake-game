@@ -47,13 +47,13 @@ namespace snake
         }
 
         public void HandLine(ConsoleKey key) {
-          if(key == ConsoleKey.LeftArrow)
+          if(key == ConsoleKey.LeftArrow & direction != Direction.RIHGT)
             direction = Direction.LEFT;
-          else if(key == ConsoleKey.RightArrow)
+          else if(key == ConsoleKey.RightArrow & direction != Direction.LEFT)
             direction = Direction.RIHGT;
-          else if(key == ConsoleKey.DownArrow)
+          else if(key == ConsoleKey.DownArrow & direction != Direction.UP)
             direction = Direction.DOWN;
-          else if(key == ConsoleKey.UpArrow)
+          else if(key == ConsoleKey.UpArrow & direction != Direction.DOWN)
             direction = Direction.UP;
         }
 
